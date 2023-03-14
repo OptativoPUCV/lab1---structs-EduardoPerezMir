@@ -63,3 +63,24 @@ exercises.c:81:24: error: expected ‘;’ before ‘calloc’
       |                        ;
 Compilation failed
 18ddacd
+Tue 14 Mar 2023 11:25:14 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:17: error: expected expression before ‘Vector’
+   81 |   ptrVector = (*Vector) calloc(n, sizeof(Vector));
+      |                 ^~~~~~
+exercises.c:81:24: error: expected ‘;’ before ‘calloc’
+   81 |   ptrVector = (*Vector) calloc(n, sizeof(Vector));
+      |                        ^~~~~~~
+      |                        ;
+exercises.c:82:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   82 |   if (ptrVector = NULL)
+      |       ^~~~~~~~~
+exercises.c:83:11: error: returning ‘int’ from a function with return type ‘Vector *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   83 |     return(EXIT_FAILURE);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+e8588a0
