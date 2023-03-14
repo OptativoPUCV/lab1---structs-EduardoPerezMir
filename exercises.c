@@ -83,8 +83,8 @@ Vector * crearVector(int n) {
   if (vectorLocal == NULL)
     exit(EXIT_FAILURE);
   
-  vectorLocal.capacidad = n;  
-  vectorLocal.datos = (int *) calloc(n, sizeof(int));
+  vectorLocal->capacidad = n;  
+  vectorLocal->datos = (int *) calloc(n, sizeof(int));
   
   return vectorLocal;
 }
