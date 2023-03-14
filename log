@@ -43,3 +43,9 @@ exercises.c:61:4: error: ‘Persona’ has no member named ‘edadedad’
       |    ^~
 Compilation failed
 7e24eb1
+Tue 14 Mar 2023 11:20:38 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+0f0595d
