@@ -235,3 +235,13 @@ Tue 14 Mar 2023 11:42:13 PM UTC:
  tests:  3|4
 total_score: 30/70
 932af83
+Tue 14 Mar 2023 11:42:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:88:19: error: invalid type argument of ‘->’ (have ‘Vector’)
+   88 |     vectorLocal[i]->capacidad = 0;
+      |                   ^~
+Compilation failed
+1e4aaea

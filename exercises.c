@@ -85,7 +85,7 @@ Vector * crearVector(int n) {
 
   for (size_t i = 0; i < n; i++)
   {
-    vectorLocal[i].capacidad = 0;
+    vectorLocal[i]->capacidad = 0;
   }
   
   
