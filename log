@@ -186,3 +186,15 @@ exercises.c:86:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 19cebe0
+Tue 14 Mar 2023 11:34:52 PM UTC: 
+ exercises.c | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:45: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   81 |   vectorLocal = (Vector *) calloc(n, sizeof(vector));
+      |                                             ^~~~~~
+      |                                             Vector
+exercises.c:81:45: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3fa374c
