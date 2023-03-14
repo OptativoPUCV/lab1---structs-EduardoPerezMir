@@ -134,3 +134,13 @@ exercises.c:81:24: error: expected ‘;’ before ‘calloc’
       |                        ;
 Compilation failed
 e7ea49c
+Tue 14 Mar 2023 11:27:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:3: error: conversion to non-scalar type requested
+   81 |   ptrVector = (Vector) calloc(n, sizeof(Vector));
+      |   ^~~~~~~~~
+Compilation failed
+b516b41
