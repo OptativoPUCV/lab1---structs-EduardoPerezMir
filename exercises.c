@@ -78,12 +78,13 @@ typedef struct {
 
 Vector * crearVector(int n) {
   Vector *vectorLocal = NULL;
-  vectorLocal = (Vector *) malloc(sizeof(Vector));
   
+  vectorLocal = (Vector *) malloc(sizeof(Vector));
   if (vectorLocal == NULL)
     exit(EXIT_FAILURE);
   
-  vectorLocal->capacidad = n;  
+  vectorLocal->capacidad = n;
+  
   vectorLocal->datos = (int *) calloc(n, sizeof(int));
   if (vectorLocal->datos == NULL)
     exit(EXIT_FAILURE);
