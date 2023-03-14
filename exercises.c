@@ -77,8 +77,17 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector *vectorLocal;
+  Vector *vectorLocal == NULL;
   vectorLocal = (Vector *) calloc(n, sizeof(Vector));
+  
+  if (vectorLocal == NULL)
+    exit(EXIT_FAILURE);
+
+  for (size_t i = 0; i < n; i++)
+  {
+    vectorLocal[i].capacidad = 0;
+  }
+  
   
   return vectorLocal;
 }
