@@ -251,3 +251,18 @@ Tue 14 Mar 2023 11:42:53 PM UTC:
  tests:  3|4
 total_score: 30/70
 932a09d
+Tue 14 Mar 2023 11:46:14 PM UTC: 
+ exercises.c | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:86:14: error: ‘vectorLocal’ is a pointer; did you mean to use ‘->’?
+   86 |   vectorLocal.capacidad = n;
+      |              ^
+      |              ->
+exercises.c:87:14: error: ‘vectorLocal’ is a pointer; did you mean to use ‘->’?
+   87 |   vectorLocal.datos = (int *) calloc(n, sizeof(int));
+      |              ^
+      |              ->
+Compilation failed
+7d908e4
