@@ -83,7 +83,7 @@ Vector * crearVector(int n) {
     vectorLocal[i].capacidad = 0;
   }
   
-  return ptrVector;
+  return vectorLocal;
 }
 
 /*
