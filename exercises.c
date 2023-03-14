@@ -80,7 +80,7 @@ Vector * crearVector(int n) {
   Vector *ptrVector;
   ptrVector = (*Vector) calloc(n, sizeof(Vector));
   if (ptrVector == NULL)
-    return(EXIT_FAILURE);
+    exit(EXIT_FAILURE);
 
   
   return ptrVector;
