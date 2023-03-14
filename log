@@ -49,3 +49,17 @@ Tue 14 Mar 2023 11:20:38 PM UTC:
  tests:  3|4
 total_score: 30/70
 0f0595d
+Tue 14 Mar 2023 11:24:24 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:17: error: expected expression before ‘Vector’
+   81 |   ptrVector = (*Vector) calloc(n, sizeof(Vector));
+      |                 ^~~~~~
+exercises.c:81:24: error: expected ‘;’ before ‘calloc’
+   81 |   ptrVector = (*Vector) calloc(n, sizeof(Vector));
+      |                        ^~~~~~~
+      |                        ;
+Compilation failed
+18ddacd
