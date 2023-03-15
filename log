@@ -370,3 +370,17 @@ exercises.c:132:7: error: unused variable ‘capacidadVector’ [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 99af043
+Wed 15 Mar 2023 12:17:40 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:133:7: error: expected identifier or ‘(’ before ‘=’ token
+  133 |   int = 0
+      |       ^
+exercises.c:132:7: error: unused variable ‘capacidadVector’ [-Werror=unused-variable]
+  132 |   int capacidadVector = c->capacidad;
+      |       ^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c85f4e0
