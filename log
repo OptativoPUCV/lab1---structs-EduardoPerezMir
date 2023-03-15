@@ -328,3 +328,13 @@ exercises.c:119:12: error: ‘i’ undeclared (first use in this function)
 exercises.c:119:12: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 285c453
+Wed 15 Mar 2023 12:08:27 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:119:9: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  119 |   c = a + b;
+      |         ^
+Compilation failed
+2098250
