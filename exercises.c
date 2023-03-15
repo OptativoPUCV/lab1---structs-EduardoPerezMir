@@ -85,10 +85,10 @@ Vector * crearVector(int n) {
 
   for (size_t i = 0; i < n; i++)
     {
-      vectorLocal[n].capacidad = n;
+      vectorLocal[i].capacidad = n;
   
-      vectorLocal[n].datos = (int *) calloc(n, sizeof(int));
-      if (vectorLocal[n].datos == NULL)
+      vectorLocal[i].datos = (int *) calloc(n, sizeof(int));
+      if (vectorLocal[i].datos == NULL)
         exit(EXIT_FAILURE);
       }
   return vectorLocal;

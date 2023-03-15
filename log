@@ -305,3 +305,9 @@ Wed 15 Mar 2023 12:01:03 AM UTC:
  1 file changed, 7 insertions(+), 5 deletions(-)
  tests:  0|0
 22f4224
+Wed 15 Mar 2023 12:02:05 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+ tests:  4|3
+total_score: 40/70
+da5c2e3
