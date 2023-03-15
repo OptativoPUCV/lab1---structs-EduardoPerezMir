@@ -401,3 +401,9 @@ exercises.c:132:7: error: unused variable ‘capacidadVector’ [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 566abad
+Wed 15 Mar 2023 12:18:05 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+b5a7739
