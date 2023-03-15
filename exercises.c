@@ -79,16 +79,18 @@ typedef struct {
 Vector * crearVector(int n) {
   Vector *vectorLocal = NULL;
   
-  vectorLocal = (Vector *) malloc(sizeof(Vector));
+  vectorLocal = (Vector *) malloc(n*sizeof(Vector));
   if (vectorLocal == NULL)
     exit(EXIT_FAILURE);
+
+  for (size_t i = 0; i < n; i++)
+    {
+      vectorLocal[n].capacidad = n;
   
-  vectorLocal->capacidad = n;
-  
-  vectorLocal->datos = (int *) calloc(n, sizeof(int));
-  if (vectorLocal->datos == NULL)
-    exit(EXIT_FAILURE);
-  
+      vectorLocal[n].datos = (int *) calloc(n, sizeof(int));
+      if (vectorLocal[n].datos == NULL)
+        exit(EXIT_FAILURE);
+      }
   return vectorLocal;
 }
 
