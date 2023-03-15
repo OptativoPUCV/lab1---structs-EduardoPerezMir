@@ -130,8 +130,12 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   int capacidadVector = c->capacidad;
-  for (int i = 0; i < capacidadVector; i++)
+  int = 0
+  while (i < n)
     {
-      c->datos[i] = a1 + a2 + b1 + b2;
+      c->datos[i] = a1 + a2;
+      i++;
+      c->datos[i] = b1 + b2;
+      i++;
     }
 }
