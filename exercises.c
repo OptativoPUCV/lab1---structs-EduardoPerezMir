@@ -78,19 +78,16 @@ typedef struct {
 
 Vector * crearVector(int n) {
   Vector *vectorLocal = NULL;
+  vectorLocal = (Vector *) malloc(sizeof(Vector));
   
-  vectorLocal = (Vector *) malloc(n*sizeof(Vector));
   if (vectorLocal == NULL)
     exit(EXIT_FAILURE);
-
-  for (size_t i = 0; i < n; i++)
-    {
-      vectorLocal[i].capacidad = n;
   
-      vectorLocal[i].datos = (int *) calloc(n, sizeof(int));
-      if (vectorLocal[i].datos == NULL)
-        exit(EXIT_FAILURE);
-      }
+  vectorLocal->capacidad = n;  
+  vectorLocal->datos = (int *) calloc(n, sizeof(int));
+  if (vectorLocal->datos == NULL)
+    exit(EXIT_FAILURE);
+  
   return vectorLocal;
 }
 
@@ -109,7 +106,8 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return 0;
+  int valor = v->datos[i];
+  return valor;
 }
 
 /*
